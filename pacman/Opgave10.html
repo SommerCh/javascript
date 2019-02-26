@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="common.css">
+    <script src="main10.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="wrapper">
+        <div id="board">
+            <img src="img_sound/Pacman_Ghost-512.png" alt="ghost" id="ghost">
+            <img src="img_sound/pacman.png" alt="pacman" id="pacman" />
+            
+
+        </div>
+        <img id="vind" src="img_sound/vindknap.png" alt="">
+        
+        <div class="control1">
+            <p>Pacman</p>
+            <img id="venstre" src="img_sound/venstre.png" alt="Venstre" />
+            <img id="op" src="img_sound/op.png" alt="Op" />
+            <img id="ned" src="img_sound/ned.png" alt="Ned" />
+            <img id="hoejre" src="img_sound/hoejre.png" alt="Højre" />
+        </div>
+
+        <audio id="pacmanlyd" src="img_sound/pacmanlyd.mp3"></audio>
+        <audio src="væk.mp3"></audio>
+        <div class="control2">
+            <p>Ghost</p>
+            <img id="venstre1" src="img_sound/venstre.png" alt="Venstre1" />
+            <img id="op1" src="img_sound/op.png" alt="Op1" />
+            <img id="ned1" src="img_sound/ned.png" alt="Ned1" />
+            <img id="hoejre1" src="img_sound/hoejre.png" alt="Højre1" />
+
+        </div>
+        <img id="panik" src="img_sound/panik.png" alt="" onmousedown="væk.play()">
+
+
+    </div>
+
+    </div>
+
+    <script>
+        var væk = new Audio();
+        væk.src = "væk.mp3";
+
+
+    </script>
+</body>
+
+</html>
